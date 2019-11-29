@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto|Roboto+Mono|Sulphur+Point&display=swap');
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+body {
+    padding: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 400vh;
+}
+
+h1 {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    font-family: 'Dosis', sans-serif;
+    font-size: 10vh;
+}
+
+h2 h3 h4 {
+    font-family: 'Dosis', sans-serif;
+}
+
+.home {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/background.jpg");
+    background-size: 100%
+}
+
+.about {
+    margin: 0px 0px 0px 0px;
+    font-family: 'Sulphur Point', sans-serif;
+    float: left;
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+}
+
+.projects {
+    margin: 0px 0px 0px 0px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(128, 128, 128, 0.034);
+    text-align: center;
+    color: aquamarine;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 10vh;
+    box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 4.9vh;
+}
+
+.logo:hover {
+    margin-top: 50px;
+    width: 10vh;
+    box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
+}
+
+.menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25;
+    text-decoration: none;
+    border: 1px solid black;
+    box-shadow: 0px 3px 50px 2px black;
+    padding: 10px 10px 10px 10px;
+    height: 35px;
+    width: max-content;
+    display: inline-block;
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+.menu a:hover {
+    transition-duration: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 3px 50px 2px whitesmoke;
+    padding: 10px 10px 10px 10px;
+    height: 35px;
+    width: max-content;
+    display: inline-block;
+    color: white;
+    background-color: rgb(46, 46, 46);
+}
+
+.projetos {
+    font-family: 'Roboto', sans-serif;
+}
