@@ -2,14 +2,16 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow: hidden;
     margin: 0px 0px 0px 0px;
 }
 
 body {
+    margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     overflow-x: hidden;
     width: 100vw;
-    height: 400vh;
+    height: 800vh;
 }
 
 h1 {
@@ -21,6 +23,7 @@ h1 {
 
 h2 h3 h4 {
     font-family: 'Dosis', sans-serif;
+    text-align: center;
 }
 
 .home {
@@ -52,6 +55,41 @@ h2 h3 h4 {
     height: 100vh;
 }
 
+.conteudo {
+    padding: auto;
+    width: 100%;
+}
+
+.projeto a {
+    text-decoration: none;
+}
+
+.projeto {
+    transition-duration: 1s;
+    color: black;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+}
+
+.projeto h3 {
+    text-align: center;
+}
+
+.projeto h4 {
+    text-align: center;
+}
+
+.projeto:hover {
+    transition-duration: 1s;
+    box-shadow: 0px 3px 50px 2px skyblue;
+    border-radius: 20px;
+}
+
 .menu {
     margin-top: 5vh;
     margin-left: auto;
@@ -67,19 +105,23 @@ h2 h3 h4 {
 }
 
 .logo {
+    transition-duration: 1s;
     margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
     width: 10vh;
     box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
     border-radius: 4.9vh;
 }
 
 .logo:hover {
-    margin-top: 50px;
-    width: 10vh;
+    transition-duration: 0.5s;
+    width: 12vh;
     box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
 }
 
 .menu a {
+    transition-duration: 1s;
     font-family: 'Open Sans', sans-serif;
     font-size: 25;
     text-decoration: none;
@@ -96,7 +138,7 @@ h2 h3 h4 {
 .menu a:hover {
     transition-duration: 0.5s;
     font-family: 'Open Sans', sans-serif;
-    font-size: 25;
+    font-size: 27;
     text-decoration: none;
     border: 1px solid black;
     border-radius: 15px;
