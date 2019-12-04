@@ -1,296 +1,316 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto|Roboto+Mono|Sulphur+Point&display=swap');
-@media (min-width:961px) {
-    html {
-        scroll-behavior: auto;
-        overflow-x: hidden;
-        overflow: hidden;
-        margin: 0px 0px 0px 0px;
-        font-size: 100%;
-    }
-    body {
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-        overflow-x: hidden;
-        width: 100vw;
-        height: 800vh;
-    }
-    h1 {
-        margin-top: 25vh;
-        margin-bottom: 10vh;
-        font-family: 'Dosis', sans-serif;
-        font-size: 10vh;
-    }
-    h2 h3 h4 {
-        font-family: 'Dosis', sans-serif;
-        text-align: center;
-    }
-    .home {
-        margin: 0px 0px 0px 0px;
-        text-align: center;
-        font-family: 'Roboto Mono', monospace;
-        float: left;
-        width: 100vw;
-        height: 100vh;
-        background-image: url("./img/background.jpg");
-        background-size: cover;
-    }
-    .about {
-        margin: 0px 0px 0px 0px;
-        font-family: 'Sulphur Point', sans-serif;
-        font-size: 3vh;
-        color: rgb(255, 141, 129);
-        float: left;
-        background-color: brown;
-        width: 100vw;
-        height: 100vh;
-    }
-    .about p {
-        text-align: justify;
-        margin-block-end: 1%;
-        margin-block-start: 1%;
-    }
-    .fotoComtexto {
-        width: 20%;
-        float: left;
-        margin: 2%;
-    }
-    .centro {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .projects {
-        margin: 0px 0px 0px 0px;
-        font-family: 'Open Sans', sans-serif;
-        float: left;
-        background-color: black;
-        width: 100vw;
-        height: 100vh;
-    }
-    .conteudo {
-        padding: auto;
-        width: 100%;
-    }
-    .projeto a {
-        text-decoration: none;
-    }
-    .projeto {
-        transition-duration: 1s;
-        color: black;
-        float: left;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 10vh;
-        background-color: white;
-        width: 40vw;
-        height: 35vh;
-    }
-    .projeto h3 {
-        text-align: center;
-    }
-    .projeto h4 {
-        text-align: center;
-    }
-    .projeto:hover {
-        transition-duration: 3s;
-        box-shadow: 0px 3px 50px 2px skyblue;
-        border-radius: 50px;
-    }
-    .logo {
-        transition-duration: 1s;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 30px;
-        width: 10vh;
-        box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
-        border-radius: 4.9vh;
-        background-color: white;
-    }
-    .logo:hover {
-        transition-duration: 0.5s;
-        width: 12vh;
-        border-radius: 6vh;
-        box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
-    }
-    .menu {
-        margin-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: max-content;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        background-color: rgba(128, 128, 128, 0.034);
-        text-align: center;
-        color: aquamarine;
-    }
-    .menu a {
-        transition-duration: 1s;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 3vh;
-        text-decoration: none;
-        border: 1px solid black;
-        box-shadow: 0px 3px 50px 2px slategray;
-        padding: 10px 10px 10px 10px;
-        height: fit-content;
-        width: max-content;
-        display: inline-block;
-        color: white;
-        background-color: rgba(56, 65, 73, 0.774);
-    }
-    .menu a:hover {
-        transition-duration: 0.5s;
-        font-size: 4vh;
-        border-radius: 15px;
-        box-shadow: 0px 3px 50px 2px whitesmoke;
-        background-color: rgb(56, 56, 73);
-    }
-    .projetos {
-        font-family: 'Roboto', sans-serif;
-    }
+@import url("https://fonts.googleapis.com/css?family=Dosis|Open+Sans|Roboto|Roboto+Mono|Sulphur+Point&display=swap");
+html {
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+  font-size: 100%;
 }
 
-@media(min-width:600px) {
-    html {
-        scroll-behavior: auto;
-        overflow-x: hidden;
-        overflow: hidden;
-        margin: 0px 0px 0px 0px;
-        font-size: 100%;
-    }
-    body {
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-        overflow-x: hidden;
-        width: 100vw;
-        height: 800vh;
-    }
-    h1 {
-        margin-top: 25vh;
-        margin-bottom: 10vh;
-        font-family: 'Dosis', sans-serif;
-        font-size: 10vh;
-    }
-    h2 h3 h4 {
-        font-family: 'Dosis', sans-serif;
-        text-align: center;
-    }
-    .home {
-        margin: 0px 0px 0px 0px;
-        text-align: center;
-        font-family: 'Roboto Mono', monospace;
-        float: left;
-        width: 100vw;
-        height: 100vh;
-        background-image: url("./img/background.jpg");
-        background-size: cover;
-    }
-    .about {
-        margin: 0px 0px 0px 0px;
-        font-family: 'Sulphur Point', sans-serif;
-        font-size: 2.4vh;
-        color: rgb(255, 141, 129);
-        float: left;
-        background-color: brown;
-        width: 100vw;
-        height: 100vh;
-    }
-    .about p {
-        text-align: justify;
-        margin-block-end: 1%;
-        margin-block-start: 1%;
-    }
-    .fotoComtexto {
-        width: 20%;
-        float: left;
-        margin: 2%;
-    }
-    .centro {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .projects {
-        margin: 0px 0px 0px 0px;
-        font-family: 'Open Sans', sans-serif;
-        float: left;
-        background-color: black;
-        width: 100vw;
-        height: 100vh;
-    }
-    .conteudo {
-        padding: auto;
-        width: 100%;
-    }
-    .projeto a {
-        text-decoration: none;
-    }
-    .projeto {
-        transition-duration: 1s;
-        color: black;
-        float: left;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 10vh;
-        background-color: white;
-        width: 40vw;
-        height: 35vh;
-    }
-    .projeto h3 {
-        text-align: center;
-    }
-    .projeto h4 {
-        text-align: center;
-    }
-    .projeto:hover {
-        transition-duration: 3s;
-        box-shadow: 0px 3px 50px 2px skyblue;
-        border-radius: 50px;
-    }
-    .logo {
-        transition-duration: 1s;
-        margin-top: 50px;
-        margin-left: 30px;
-        margin-right: 30px;
-        width: 10vh;
-        box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
-        border-radius: 4.9vh;
-        background-color: white;
-    }
-    .logo:hover {
-        transition-duration: 0.5s;
-        width: 12vh;
-        border-radius: 6vh;
-        box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
-    }
-    .menu {
-        margin-top: 5vh;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: max-content;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        background-color: rgba(128, 128, 128, 0.034);
-        text-align: center;
-        color: aquamarine;
-    }
-    .menu a {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 3vh;
-        text-decoration: none;
-        border: 1px solid black;
-        box-shadow: 0px 3px 50px 2px slategray;
-        padding: 10px 10px 10px 10px;
-        height: fit-content;
-        width: max-content;
-        display: inline-block;
-        color: white;
-        background-color: rgba(56, 65, 73, 0.774);
-    }
-    .projetos {
-        font-family: 'Roboto', sans-serif;
-    }
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 800vh;
 }
+
+.info {
+  color: white;
+}
+
+@media (min-width: 961px) {
+  h1 {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    font-family: "Dosis", sans-serif;
+    font-size: 10vh;
+    color: whitesmoke;
+  }
+
+  h2 h3 h4 {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+  }
+
+  .home {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+  }
+
+  .about {
+    margin: 0px 0px 0px 0px;
+    font-family: "Sulphur Point", sans-serif;
+    font-size: 3vh;
+    color: #ff8d81;
+    float: left;
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+  }
+  .about p {
+    text-align: justify;
+    margin-block-end: 1%;
+    margin-block-start: 1%;
+  }
+
+  .fotoComtexto {
+    width: 20%;
+    float: left;
+    margin: 2%;
+  }
+
+  .centro {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .projects {
+    margin: 0px 0px 0px 0px;
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .conteudo {
+    padding: auto;
+    width: 100%;
+  }
+
+  .projeto {
+    transition-duration: 1s;
+    color: black;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+  }
+  .projeto a {
+    text-decoration: none;
+  }
+  .projeto h3,
+.projeto h4 {
+    text-align: center;
+  }
+  .projeto:hover {
+    transition-duration: 3s;
+    box-shadow: 0px 3px 50px 2px skyblue;
+    border-radius: 50px;
+  }
+
+  .logo {
+    transition-duration: 1s;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 10vh;
+    box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 4.9vh;
+    background-color: white;
+  }
+  .logo:hover {
+    transition-duration: 0.5s;
+    width: 12vh;
+    border-radius: 6vh;
+    box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
+  }
+
+  .menu {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(128, 128, 128, 0.034);
+    text-align: center;
+    color: aquamarine;
+  }
+  .menu a {
+    transition-duration: 1s;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3vh;
+    text-decoration: none;
+    border: 1px solid black;
+    box-shadow: 0px 3px 50px 2px slategray;
+    padding: 10px 10px 10px 10px;
+    height: fit-content;
+    width: max-content;
+    display: inline-block;
+    color: white;
+    background-color: rgba(56, 65, 73, 0.774);
+  }
+  .menu a:hover {
+    transition-duration: 0.5s;
+    font-size: 4vh;
+    border-radius: 15px;
+    box-shadow: 0px 3px 50px 2px whitesmoke;
+    background-color: #383849;
+  }
+
+  .projetos {
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media (min-width: 600px) {
+  h1 {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+    font-family: "Dosis", sans-serif;
+    font-size: 10vh;
+  }
+
+  h2 h3 h4 {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+  }
+
+  .home {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+  }
+
+  .about {
+    margin: 0px 0px 0px 0px;
+    font-family: "Sulphur Point", sans-serif;
+    font-size: 2.4vh;
+    color: #ff8d81;
+    float: left;
+    background-color: brown;
+    width: 100vw;
+    height: 100vh;
+  }
+  .about p {
+    text-align: justify;
+    margin-block-end: 1%;
+    margin-block-start: 1%;
+  }
+
+  .fotoComtexto {
+    width: 20%;
+    float: left;
+    margin: 2%;
+  }
+
+  .centro {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .projects {
+    margin: 0px 0px 0px 0px;
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  .projects h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .conteudo {
+    padding: auto;
+    width: 100%;
+  }
+
+  .projeto {
+    transition-duration: 1s;
+    color: black;
+    float: left;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+  }
+  .projeto a {
+    text-decoration: none;
+  }
+  .projeto h3,
+.projeto h4 {
+    text-align: center;
+  }
+  .projeto:hover {
+    transition-duration: 3s;
+    box-shadow: 0px 3px 50px 2px skyblue;
+    border-radius: 50px;
+  }
+
+  .logo {
+    transition-duration: 1s;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 10vh;
+    box-shadow: 0px 3px 50px 2px rgba(0, 0, 0, 0.342);
+    border-radius: 4.9vh;
+    background-color: white;
+  }
+  .logo:hover {
+    transition-duration: 0.5s;
+    width: 12vh;
+    border-radius: 6vh;
+    box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
+  }
+
+  .menu {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: max-content;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: rgba(128, 128, 128, 0.034);
+    text-align: center;
+    color: aquamarine;
+  }
+  .menu a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3vh;
+    text-decoration: none;
+    border: 1px solid black;
+    box-shadow: 0px 3px 50px 2px slategray;
+    padding: 10px 10px 10px 10px;
+    height: fit-content;
+    width: max-content;
+    display: inline-block;
+    color: white;
+    background-color: rgba(56, 65, 73, 0.774);
+  }
+
+  .projetos {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
