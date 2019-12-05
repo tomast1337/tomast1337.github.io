@@ -15,10 +15,6 @@ body {
   height: 800vh;
 }
 
-.info {
-  color: white;
-}
-
 @media (min-width: 961px) {
   h1 {
     margin-top: 25vh;
@@ -169,6 +165,14 @@ body {
   .projetos {
     font-family: "Roboto", sans-serif;
   }
+
+  .info {
+    font-size: 2.4vh;
+    margin: auto;
+    width: 90vw;
+    height: 80vh;
+    color: white;
+  }
 }
 @media (min-width: 600px) {
   h1 {
@@ -310,6 +314,14 @@ body {
 
   .projetos {
     font-family: "Roboto", sans-serif;
+  }
+
+  .info {
+    font-size: 120%;
+    margin: auto;
+    width: 90vw;
+    height: 80vh;
+    color: white;
   }
 }
 
