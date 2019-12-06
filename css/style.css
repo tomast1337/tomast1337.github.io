@@ -44,7 +44,7 @@ body .sidebar .icones {
 body .sidebar .icones .logo {
   transition-duration: 1s;
   margin-bottom: 10px;
-  width: 100%;
+  width: 5vw;
   box-shadow: 0px 3px 50px 2px #012F40;
   border-radius: 4.9vh;
 }
@@ -114,12 +114,13 @@ body .sidebar:hover .contato {
   display: block;
   visibility: visible;
 }
-body .inicio {
+
+.inicio {
   height: 300vh;
   width: 100vw;
   overflow: visible;
 }
-body .inicio .intro {
+.inicio .intro {
   margin-left: 10vw;
   color: white;
   width: 90vw;
@@ -127,10 +128,10 @@ body .inicio .intro {
   float: left;
   text-align: center;
 }
-body .inicio .intro .nome {
+.inicio .intro .nome {
   z-index: -1;
 }
-body .inicio .intro .nome h1 {
+.inicio .intro .nome h1 {
   margin-top: 25vh;
   margin-bottom: 10vh;
   font-family: "Dosis", sans-serif;
@@ -139,7 +140,8 @@ body .inicio .intro .nome h1 {
   -webkit-text-stroke-width: 0.05px;
   -webkit-text-stroke-color: black;
 }
-body .sobre {
+
+.sobre {
   font-family: "Sulphur Point", sans-serif;
   width: 100vw;
   height: 100vh;
@@ -148,24 +150,25 @@ body .sobre {
   color: #ff8d81;
   font-size: 2.4vh;
 }
-body .sobre div {
+.sobre div {
   margin-left: 24vw;
   margin-right: 12vw;
   margin-top: 10%;
   margin-bottom: auto;
 }
-body .sobre .fotoComtexto {
+.sobre .fotoComtexto {
   border: dashed rgba(0, 0, 0, 0.336);
   width: 20%;
   float: left;
   margin: 2%;
 }
-body .sobre p {
+.sobre p {
   text-align: justify;
   margin-block-end: 1%;
   margin-block-start: 1%;
 }
-body .projetos {
+
+.projetos {
   font-family: "Open Sans", sans-serif;
   margin-left: 10vw;
   color: white;
@@ -173,10 +176,10 @@ body .projetos {
   height: 100vh;
   float: left;
 }
-body .projetos h2 {
+.projetos h2 {
   text-align: center;
 }
-body .projetos .projeto {
+.projetos .projeto {
   transition-duration: 1s;
   color: black;
   float: left;
@@ -187,18 +190,75 @@ body .projetos .projeto {
   width: 42%;
   height: 42%;
 }
-body .projetos .projeto a {
+.projetos .projeto a {
   padding: 10%;
   text-decoration: none;
 }
-body .projetos .projeto h3,
-body .projetos .projeto h4 {
+.projetos .projeto h3,
+.projetos .projeto h4 {
   text-align: center;
 }
-body .projetos .projeto:hover {
+.projetos .projeto:hover {
   transition-duration: 5s;
   box-shadow: 0px 3px 50px 2px skyblue;
   border-radius: 20%;
+}
+
+.info {
+  font-family: "Sulphur Point", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 5%;
+  width: 90vw;
+  height: 90vh;
+}
+.info .texto {
+  margin: 10%;
+}
+.info .icones {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.info .icones .logo {
+  background: white;
+  transition-duration: 1s;
+  margin-bottom: 10px;
+  width: 10vw;
+  box-shadow: 0px 3px 50px 2px #012F40;
+  border-radius: 50%;
+}
+.info .icones .logo:hover {
+  transition-duration: 0.5s;
+  margin-left: 1vw;
+  width: 12vw;
+  border-radius: 50%;
+  box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
+}
+.info .menu {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info .menu a {
+  transition-duration: 2s;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  height: fit-content;
+  width: max-content;
+  font-size: 200%;
+  color: white;
+  background-color: rgba(56, 65, 73, 0.774);
+}
+.info .menu a:hover {
+  transition-duration: 0.5s;
+  font-size: 250%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 50px 2px whitesmoke;
+  background-color: #383849;
 }
 
 @media (min-width: 961px) {
