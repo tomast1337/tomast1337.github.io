@@ -70,7 +70,6 @@ body .sidebar .contato h2:hover {
   font-size: 200%;
 }
 body .sidebar:hover {
-  transition-duration: 0.5s;
   width: 40vw;
 }
 body .sidebar:hover .burger {
