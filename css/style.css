@@ -5,386 +5,232 @@ html {
   font-size: 100%;
 }
 
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100vw;
+  height: fit-content;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+body .sidebar {
+  z-index: 10;
+  transition-duration: 0.5s;
+  text-align: center;
+  position: fixed;
+  float: left;
+  height: 110vh;
+  width: 5vw;
+  background-color: #475a72;
+}
+body .sidebar .burger {
+  margin: 5px;
+  display: block;
+  visibility: visible;
+}
+body .sidebar .burger div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+body .sidebar .menu {
+  display: none;
+  visibility: hidden;
+}
+body .sidebar .icones {
+  margin-top: 40vh;
+}
+body .sidebar .icones .logo {
+  transition-duration: 1s;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 0px 3px 50px 2px #012F40;
+  border-radius: 4.9vh;
+}
+body .sidebar .icones .logo:hover {
+  transition-duration: 0.5s;
+  margin-left: 1vw;
+  width: 8vw;
+  border-radius: 6vh;
+  box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
+}
+body .sidebar .contato {
+  transition-duration: 0.5s;
+  margin-top: 10%;
+  display: none;
+  visibility: hidden;
+}
+body .sidebar .contato h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #012F40;
+}
+body .sidebar .contato h2:hover {
+  transition-duration: 0.5s;
+  font-size: 200%;
+}
+body .sidebar:hover {
+  transition-duration: 0.5s;
+  width: 40vw;
+}
+body .sidebar:hover .burger {
+  display: none;
+  visibility: hidden;
+}
+body .sidebar:hover .menu {
+  margin-top: 50%;
+  display: block;
+  visibility: visible;
+}
+body .sidebar:hover .menu a {
+  transition-duration: 2s;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  margin: auto;
+  height: fit-content;
+  width: max-content;
+  font-size: 200%;
+  color: white;
+  background-color: rgba(56, 65, 73, 0.774);
+}
+body .sidebar:hover .menu a:hover {
+  transition-duration: 0.5s;
+  font-size: 250%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 50px 2px whitesmoke;
+  background-color: #383849;
+}
+body .sidebar:hover .logo {
+  transition-duration: 1s;
+  width: 20%;
+}
+body .sidebar:hover .logo:hover {
+  transition-duration: 1s;
+  width: 30%;
+}
+body .sidebar:hover .contato {
+  transition-duration: 0.5s;
+  display: block;
+  visibility: visible;
+}
+body .inicio {
+  height: 300vh;
+  width: 100vw;
+  overflow: visible;
+}
+body .inicio .intro {
+  margin-left: 10vw;
+  color: white;
+  width: 90vw;
+  height: 100vh;
+  float: left;
+  text-align: center;
+}
+body .inicio .intro .nome {
+  z-index: -1;
+}
+body .inicio .intro .nome h1 {
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+  font-family: "Dosis", sans-serif;
+  font-size: 20vh;
+  color: whitesmoke;
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: black;
+}
+body .sobre {
+  font-family: "Sulphur Point", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  background-color: brown;
+  color: #ff8d81;
+  font-size: 2.4vh;
+}
+body .sobre div {
+  margin-left: 24vw;
+  margin-right: 12vw;
+  margin-top: 10%;
+  margin-bottom: auto;
+}
+body .sobre .fotoComtexto {
+  border: dashed rgba(0, 0, 0, 0.336);
+  width: 20%;
+  float: left;
+  margin: 2%;
+}
+body .sobre p {
+  text-align: justify;
+  margin-block-end: 1%;
+  margin-block-start: 1%;
+}
+body .projetos {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 10vw;
+  color: white;
+  width: 90vw;
+  height: 100vh;
+  float: left;
+}
+body .projetos h2 {
+  text-align: center;
+}
+body .projetos .projeto {
+  transition-duration: 1s;
+  color: black;
+  float: left;
+  background-color: white;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 2%;
+  width: 42%;
+  height: 42%;
+}
+body .projetos .projeto a {
+  padding: 10%;
+  text-decoration: none;
+}
+body .projetos .projeto h3,
+body .projetos .projeto h4 {
+  text-align: center;
+}
+body .projetos .projeto:hover {
+  transition-duration: 5s;
+  box-shadow: 0px 3px 50px 2px skyblue;
+  border-radius: 20%;
+}
+
 @media (min-width: 961px) {
-  body {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    width: 100vw;
-    height: fit-content;
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-  }
-  body .sidebar {
-    z-index: 10;
-    transition-duration: 0.5s;
-    text-align: center;
-    position: fixed;
-    float: left;
-    height: 110vh;
-    width: 10vw;
-    background-color: #475a72;
-  }
-  body .sidebar .burger div div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  body .sidebar .menu {
-    display: none;
-    visibility: hidden;
-  }
-  body .sidebar .logo {
-    transition-duration: 1s;
-    margin-top: 50%;
-    width: 100%;
-    box-shadow: 0px 3px 50px 2px #012F40;
-    border-radius: 4.9vh;
-  }
-  body .sidebar .logo:hover {
-    transition-duration: 0.5s;
-    margin-left: 1vw;
-    width: 8vw;
-    border-radius: 6vh;
-    box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
-  }
-  body .sidebar .contato {
-    transition-duration: 0.5s;
-    margin-top: 10%;
-    display: none;
-    visibility: hidden;
-  }
-  body .sidebar .contato h2 {
-    font-family: "Open Sans", sans-serif;
-    color: #012F40;
-  }
-  body .sidebar .contato h2:hover {
-    transition-duration: 0.5s;
-    font-size: 200%;
-  }
-  body .sidebar:hover {
-    transition-duration: 0.5s;
-    width: 40vw;
-  }
-  body .sidebar:hover .menu {
-    margin-top: 10%;
-    display: block;
-    visibility: visible;
-  }
-  body .sidebar:hover .menu a {
-    transition-duration: 2s;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-    margin: auto;
-    height: fit-content;
-    width: max-content;
-    font-size: 200%;
-    color: white;
-    background-color: rgba(56, 65, 73, 0.774);
-  }
-  body .sidebar:hover .menu a:hover {
-    transition-duration: 0.5s;
-    font-size: 250%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 50px 2px whitesmoke;
-    background-color: #383849;
-  }
-  body .sidebar:hover .logo {
-    transition-duration: 1s;
-    width: 20%;
-  }
-  body .sidebar:hover .logo:hover {
-    transition-duration: 1s;
-    width: 30%;
-  }
-  body .sidebar:hover .contato {
-    transition-duration: 0.5s;
-    display: block;
-    visibility: visible;
-  }
-  body .inicio {
-    height: 300vh;
-    width: 100vw;
-    overflow: visible;
-  }
-  body .inicio .intro {
-    margin-left: 10vw;
-    color: white;
-    width: 90vw;
-    height: 100vh;
-    float: left;
-    text-align: center;
-  }
-  body .inicio .intro .nome {
-    z-index: -1;
-  }
   body .inicio .intro .nome h1 {
-    margin-top: 25vh;
-    margin-bottom: 10vh;
-    font-family: "Dosis", sans-serif;
     font-size: 20vh;
-    color: whitesmoke;
-    -webkit-text-stroke-width: 0.05px;
-    -webkit-text-stroke-color: black;
   }
   body .inicio .sobre {
-    font-family: "Sulphur Point", sans-serif;
-    width: 100vw;
-    height: 100vh;
-    float: left;
-    background-color: brown;
-    color: #ff8d81;
     font-size: 2.4vh;
-  }
-  body .inicio .sobre div {
-    margin-left: 24vw;
-    margin-right: 12vw;
-    margin-top: 10%;
-    margin-bottom: auto;
-  }
-  body .inicio .sobre .fotoComtexto {
-    border: dashed rgba(0, 0, 0, 0.336);
-    width: 20%;
-    float: left;
-    margin: 2%;
-  }
-  body .inicio .sobre p {
-    text-align: justify;
-    margin-block-end: 1%;
-    margin-block-start: 1%;
-  }
-  body .inicio .projetos {
-    font-family: "Open Sans", sans-serif;
-    margin-left: 10vw;
-    color: white;
-    width: 90vw;
-    height: 100vh;
-    float: left;
-  }
-  body .inicio .projetos h2 {
-    text-align: center;
-  }
-  body .inicio .projetos .projeto {
-    transition-duration: 1s;
-    color: black;
-    float: left;
-    background-color: white;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 2%;
-    width: 42%;
-    height: 42%;
-  }
-  body .inicio .projetos .projeto a {
-    padding: 10%;
-    text-decoration: none;
-  }
-  body .inicio .projetos .projeto h3,
-body .inicio .projetos .projeto h4 {
-    text-align: center;
   }
   body .inicio .projetos .projeto:hover {
     transition-duration: 5s;
     box-shadow: 0px 3px 50px 2px skyblue;
-    border-radius: 20%;
+    border-radius: 20px;
   }
 }
 @media (min-width: 600px) {
-  body {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    width: 100vw;
-    height: fit-content;
-    background-image: url("../img/background.jpg");
-    background-size: cover;
-  }
-  body .sidebar {
-    z-index: 10;
-    transition-duration: 0.5s;
-    text-align: center;
-    position: fixed;
-    float: left;
-    height: 110vh;
-    width: 5vw;
-    background-color: #475a72;
-  }
-  body .sidebar .burger {
-    margin: 5px;
-    display: block;
-    visibility: visible;
-  }
-  body .sidebar .burger div {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  body .sidebar .menu {
-    display: none;
-    visibility: hidden;
-  }
-  body .sidebar .icones {
-    margin-top: 40vh;
-  }
-  body .sidebar .icones .logo {
-    transition-duration: 1s;
-    margin-bottom: 10px;
-    width: 100%;
-    box-shadow: 0px 3px 50px 2px #012F40;
-    border-radius: 4.9vh;
-  }
-  body .sidebar .icones .logo:hover {
-    transition-duration: 0.5s;
-    margin-left: 1vw;
-    width: 8vw;
-    border-radius: 6vh;
-    box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
-  }
-  body .sidebar .contato {
-    transition-duration: 0.5s;
-    margin-top: 10%;
-    display: none;
-    visibility: hidden;
-  }
-  body .sidebar .contato h2 {
-    font-family: "Open Sans", sans-serif;
-    color: #012F40;
-  }
-  body .sidebar .contato h2:hover {
-    transition-duration: 0.5s;
-    font-size: 200%;
-  }
-  body .sidebar:hover {
-    transition-duration: 0.5s;
-    width: 40vw;
-  }
-  body .sidebar:hover .burger {
-    display: none;
-    visibility: hidden;
-  }
-  body .sidebar:hover .menu {
-    margin-top: 50%;
-    display: block;
-    visibility: visible;
-  }
-  body .sidebar:hover .menu a {
-    transition-duration: 2s;
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-    margin: auto;
-    height: fit-content;
-    width: max-content;
-    font-size: 200%;
-    color: white;
-    background-color: rgba(56, 65, 73, 0.774);
-  }
-  body .sidebar:hover .menu a:hover {
-    transition-duration: 0.5s;
-    font-size: 250%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 50px 2px whitesmoke;
-    background-color: #383849;
-  }
-  body .sidebar:hover .logo {
-    transition-duration: 1s;
-    width: 20%;
-  }
-  body .sidebar:hover .logo:hover {
-    transition-duration: 1s;
-    width: 30%;
-  }
-  body .sidebar:hover .contato {
-    transition-duration: 0.5s;
-    display: block;
-    visibility: visible;
-  }
-  body .inicio {
-    height: 300vh;
-    width: 100vw;
-    overflow: visible;
-  }
-  body .inicio .intro {
-    margin-left: 10vw;
-    color: white;
-    width: 90vw;
-    height: 100vh;
-    float: left;
-    text-align: center;
-  }
-  body .inicio .intro .nome {
-    z-index: -1;
-  }
   body .inicio .intro .nome h1 {
-    margin-top: 25vh;
-    margin-bottom: 10vh;
-    font-family: "Dosis", sans-serif;
-    font-size: 20vh;
-    color: whitesmoke;
-    -webkit-text-stroke-width: 0.05px;
-    -webkit-text-stroke-color: black;
+    font-size: 15vh;
   }
   body .inicio .sobre {
-    font-family: "Sulphur Point", sans-serif;
-    width: 100vw;
-    height: 100vh;
-    float: left;
-    background-color: brown;
-    color: #ff8d81;
-    font-size: 2.4vh;
-  }
-  body .inicio .sobre div {
-    margin-left: 24vw;
-    margin-right: 12vw;
-    margin-top: 10%;
-    margin-bottom: auto;
+    font-size: 2.2vh;
   }
   body .inicio .sobre .fotoComtexto {
-    border: dashed rgba(0, 0, 0, 0.336);
-    width: 20%;
-    float: left;
-    margin: 2%;
-  }
-  body .inicio .sobre p {
-    text-align: justify;
-    margin-block-end: 1%;
-    margin-block-start: 1%;
-  }
-  body .inicio .projetos {
-    font-family: "Open Sans", sans-serif;
-    margin-left: 10vw;
-    color: white;
-    width: 90vw;
-    height: 100vh;
-    float: left;
+    width: 30%;
   }
   body .inicio .projetos h2 {
-    text-align: center;
-  }
-  body .inicio .projetos .projeto {
-    transition-duration: 1s;
-    color: black;
-    float: left;
-    background-color: white;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 2%;
-    width: 42%;
-    height: 42%;
-  }
-  body .inicio .projetos .projeto a {
-    padding: 10%;
-    text-decoration: none;
-  }
-  body .inicio .projetos .projeto h3,
-body .inicio .projetos .projeto h4 {
-    text-align: center;
+    font-size: 150%;
   }
   body .inicio .projetos .projeto:hover {
     transition-duration: 5s;
     box-shadow: 0px 3px 50px 2px skyblue;
-    border-radius: 20%;
+    border-radius: 15px;
   }
 }
 
