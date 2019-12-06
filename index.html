@@ -1,150 +1,76 @@
-<html>
+<html ng-app="myApp">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./angular.min.js"></script>
     <title>Nicolas Vycas Nery</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
 <body>
-    <div id="MENU">
-    </div>
-    <div class="home" id="MENU" autofocus>
-        <h1>Olá sou Nicolas</br>
-        </h1>
+    <div class="sidebar" onblur="menuFechar()" onclick="menuAbrir()">
         <div class="menu">
             <a href=" #PROJETOS">Projetos</a>
             <a href="#SOBRE">sobre</a>
-            <a href="#CONTADO">contado</a>
         </div>
-        <div>
+        <div class="contato">
+            <h2>vycasnicolas@gmail.com</h2>
+        </div>
+        <div class=".icones">
             <a href="https://github.com/tomast1337">
                 <img class="logo" src="./img/logos/Github.svg" alt="Github">
             </a>
+            </br>
             <a href="https://www.linkedin.com/in/nicolas-vycas-nery/">
                 <img class="logo" src="./img/logos/linkedin.svg" alt="Linkedin">
             </a>
         </div>
     </div>
-    <div class="projects" id="PROJETOS">
-        <div class="menu">
-            <a href="#MENU">Inicio</a>
-            <a href="#SOBRE">sobre</a>
-            <a href="#CONTADO">contado</a>
+    <div class="inicio">
+        <div class="intro">
+            <div class="nome">
+                <h1>Olá sou Nicolas</h1>
+            </div>
         </div>
-        <a href="#PROJETO1">
-            <div class="projeto" id="projeto1">
-                <h3>Gestão de vendas, estoque e estoque </br> em java</h3>
-                <h4>Clique para ver mais!</h4>
-            </div>
-        </a>
-        <a href="#PROJETO2">
-            <div class="projeto" id="projeto2">
-                <h3>Bot Rio Vags</h3>
-                <h4>Clique para ver mais!</h4>
-            </div>
-        </a>
-        <a href="#PROJETO3">
-            <div class="projeto" id="projeto3">
-                <h3>Em breve</h3>
-            </div>
-        </a>
-        <a href="#PROJETO4">
-            <div class="projeto" id="projeto4">
-                <h3>Em breve</h3>
-            </div>
-        </a>
-    </div>
-    <div class="projects" id="CONTADO">
-        <div class="menu">
-            <a href="#MENU">Inicio</a>
-            <a href="#PROJETOS">Projetos</a>
-            <a href="#SOBRE">sobre</a>
-        </div>
-        <div class="menu">
-            <a href="https://github.com/tomast1337">
-                <img class="logo" src="./img/logos/Github.svg" alt="Github">
+        <div class="projetos" id="PROJETOS">
+            <a href="#PROJETO1">
+                <div class="projeto" id="projeto1">
+                    <h3>Gestão de vendas, estoque e estoque em java</h3>
+                    <h4>Clique para ver mais!</h4>
+                </div>
             </a>
-            <a href="https://www.linkedin.com/in/nicolas-vycas-nery/">
-                <img class="logo" src="./img/logos/linkedin.svg" alt="Linkedin">
+            <a href="#PROJETO2">
+                <div class="projeto" id="projeto2">
+                    <h3>Bot Rio Vags</h3>
+                    <h4>Clique para ver mais!</h4>
+                </div>
+            </a>
+            <a href="#PROJETO3">
+                <div class="projeto" id="projeto3">
+                    <h3>Em breve</h3>
+                </div>
+            </a>
+            <a href="#PROJETO4">
+                <div class="projeto" id="projeto4">
+                    <h3>Em breve</h3>
+                </div>
             </a>
         </div>
-    </div>
-    <div class="about" id="SOBRE">
-        <div class="menu">
-            <a href="#MENU">Inicio</a>
-            <a href="#PROJETOS">Projetos</a>
-            <a href="#CONTADO">contado</a>
-        </div>
-        <div>
-            <img class="fotoComtexto" src="./img/Nicolas.png">
-            <p>&emsp;Sou Nicolas Vycas Nery estou feliz de você estar aqui.</p>
-            <p>&emsp;Gosto muito de aprender coisas novas tenho conhecimento em diversas áreas em desenvolvimento tanto front end e back end conhecimento, para mim, nunca é o suficiente ,estou sempre pesquisando por novidades </p>
-            <p>&emsp;Estou cursando ensino superior no curso de ciência da computação e já possuo formação técnica em informática.
-            </p>
-            <p>&emsp;Não me sinto muito no direito de me auto avaliar e dar qualquer “porcentagem” de minhas habilidades mas sei que não tenho muita experiencia com front-end atualmente mas tenho mais experiência com o back end.
-            </p>
-            <p>&emsp;Caso ainda não tenha visto gostaria que você visitasse a aba projetos e desse uma olhada no que chamasse sua atenção.</p>
-        </div>
-        <div class="centro">
-            <a href="https://github.com/tomast1337">
-                <img class="logo" src="./img/logos/Github.svg" alt="Github">
-            </a>
-            <a href="https://www.linkedin.com/in/nicolas-vycas-nery/">
-                <img class="logo" src="./img/logos/linkedin.svg" alt="Linkedin">
-            </a>
+        <div class="sobre" id="SOBRE">
+            <div>
+                <img class="fotoComtexto" src="./img/Nicolas.png">
+                <p>&emsp;Sou Nicolas Vycas Nery estou feliz de você estar aqui.</p>
+                <p>&emsp;Gosto muito de aprender coisas novas tenho conhecimento em diversas áreas em desenvolvimento tanto front end e back end conhecimento, para mim, nunca é o suficiente ,estou sempre pesquisando por novidades </p>
+                <p>&emsp;Estou cursando ensino superior no curso de ciência da computação e já possuo formação técnica em informática.
+                </p>
+                <p>&emsp;Não me sinto muito no direito de me auto avaliar e dar qualquer “porcentagem” de minhas habilidades mas sei que não tenho muita experiencia com front-end atualmente mas tenho mais experiência com o back end.
+                </p>
+                </br>
+                <p>&emsp;Caso ainda não tenha visto gostaria que você visitasse a aba projetos e desse uma olhada no que chamasse sua atenção.</p>
+            </div>
         </div>
     </div>
-    <div class="projects" id="PROJETO1">
-        <div class="menu">
-            <a href="#PROJETOS">Voltar</a>
-            <a href="https://github.com/tomast1337/controle-de-loja-em-java">Github</a>
-        </div>
-        <div class="info">
-            <h2>Controle de loja em java</h2>
-            <p>Uma melhoria do meu projeto final do ensino médio do qual tenho muita vergonha de mostrar pois tinha muitos erros e está muito ultrapassado para os dias de hoje</p>
-            <h4>Características do projeto</h4>
-            <li>Cadastro de Clientes</li>
-            <li>Cadastro de Vendas e Produtos envolvidos</li>
-            <li>Cadastro de Produtos e Estoque dos mesmos</li>
-            <h4>Utilizado no projeto</h4>
-            <li>NetBeans 8.0.2</li>
-            <li>java 8</li>
-            <li>MySql</li>
-            <li>Astah Community</li>
-        </div>
-    </div>
-    <div class="projects" id="PROJETO2">
-        <div class="menu">
-            <a href="#PROJETOS">Voltar</a>
-            <a href="https://github.com/tomast1337/Rio-Vagas-Bot">Github</a>
-        </div>
-        <div class="info">
-            <h2>Bot Rio Vags</h2>
-            <p>Um dos primeiro projeto que fiz para esse protifolio, a ideia parar ele veio da nessecidade de procurar emprego masi prequiça de procurar</p>
-            <h4>Características do projeto:</h4>
-            <li>Buscar vagas no site Rio Vagas</li>
-            <li>Enviar currículos</li>
-            <li>Gerir portfólio com diversas configurações de envio de currículos e busca de vagas</li>
-            <h4>Utilizado no projeto:</h4>
-            <li>Python 3.6.8</li>
-            <li>Biblioteca EEL</li>
-            <li>Biblioteca Selenium Webdriver</li>
-            <li>SQLite</li>
-            <li>ChromeDriver</li>
-        </div>
-    </div>
-    <div class="projects" id="PROJETO3">
-        <div class="menu">
-            <a href="#PROJETOS">Voltar</a>
-        </div>
-        <h1>Em breve</h1>
-    </div>
-    <div class="projects" id="PROJETO4">
-        <div class="menu">
-            <a href="#PROJETOS">Voltar</a>
-        </div>
-        <h1>Em breve</h1>
-    </div>
+
 </body>
 
 </html>
