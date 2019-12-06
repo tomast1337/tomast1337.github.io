@@ -1,14 +1,18 @@
 <html ng-app="myApp">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./angular.min.js"></script>
     <title>Nicolas Vycas Nery</title>
 </head>
 
 <body>
-    <div class="sidebar" onblur="menuFechar()" onclick="menuAbrir()">
+    <div class="sidebar">
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="menu">
             <a href=" #PROJETOS">Projetos</a>
             <a href="#SOBRE">sobre</a>
@@ -16,11 +20,10 @@
         <div class="contato">
             <h2>vycasnicolas@gmail.com</h2>
         </div>
-        <div class=".icones">
+        <div class="icones">
             <a href="https://github.com/tomast1337">
                 <img class="logo" src="./img/logos/Github.svg" alt="Github">
             </a>
-            </br>
             <a href="https://www.linkedin.com/in/nicolas-vycas-nery/">
                 <img class="logo" src="./img/logos/linkedin.svg" alt="Linkedin">
             </a>
