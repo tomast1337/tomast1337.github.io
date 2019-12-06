@@ -272,6 +272,9 @@ body .sidebar:hover .contato {
     box-shadow: 0px 3px 50px 2px skyblue;
     border-radius: 20px;
   }
+  body .info {
+    font-size: 100%;
+  }
 }
 @media (min-width: 600px) {
   body .inicio .intro .nome h1 {
@@ -290,6 +293,9 @@ body .sidebar:hover .contato {
     transition-duration: 5s;
     box-shadow: 0px 3px 50px 2px skyblue;
     border-radius: 15px;
+  }
+  body .info {
+    font-size: 200%;
   }
 }
 
