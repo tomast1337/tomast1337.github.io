@@ -14,7 +14,6 @@
         background-size: cover;
         .sidebar {
             z-index: 10;
-            transition-duration: 0.5s;
             text-align: center;
             position: fixed;
             float: left;
@@ -37,7 +36,7 @@
                 visibility: hidden;
             }
             .icones {
-                margin-top: 40vh;
+                margin-top: 5vh;
                 .logo {
                     transition-duration: 1s;
                     margin-bottom: 10px;
@@ -247,7 +246,7 @@
                 margin: auto;
                 height: fit-content;
                 width: max-content;
-                font-size: 200%;
+                font-size: 150%;
                 color: white;
                 background-color: rgba(56, 65, 73, 0.774);
                 &:hover {
@@ -285,7 +284,7 @@
                 }
             }
             .info {
-                font-size: 100%;
+                font-size: 200%;
             }
         }
     }
@@ -320,7 +319,7 @@
                 }
             }
             .info {
-                font-size: 200%;
+                font-size: 150%;
             }
         }
     }
