@@ -37,6 +37,7 @@
             }
             .icones {
                 margin-top: 5vh;
+                .logoTemp,
                 .logo {
                     transition-duration: 1s;
                     margin-bottom: 10px;
@@ -96,6 +97,10 @@
                         }
                     }
                 }
+                .logoTemp {
+                    display: none;
+                    visibility: hidden;
+                }
                 .logo {
                     transition-duration: 1s;
                     width: 20%;
@@ -114,6 +119,7 @@
     }
     
     .inicio {
+        z-index: 9;
         height: 300vh;
         width: 100vw;
         overflow: visible;
@@ -140,6 +146,7 @@
     }
     
     .sobre {
+        z-index: 9;
         font-family: 'Sulphur Point', sans-serif;
         width: 100vw;
         height: 100vh;
@@ -167,6 +174,7 @@
     }
     
     .projetos {
+        z-index: 9;
         h2 {
             text-align: center;
         }
@@ -204,6 +212,7 @@
     }
     
     .info {
+        z-index: 9;
         font-family: 'Sulphur Point', sans-serif;
         background-color: black;
         color: white;
