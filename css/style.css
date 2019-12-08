@@ -19,16 +19,16 @@ body .sidebar {
   position: fixed;
   float: left;
   height: 110vh;
-  width: 5vw;
   background-color: #475a72;
 }
 body .sidebar .burger {
-  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35px;
   display: block;
   visibility: visible;
 }
 body .sidebar .burger div {
-  width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
@@ -46,7 +46,7 @@ body .sidebar .icones .logo {
   margin-bottom: 10px;
   width: 5vw;
   box-shadow: 0px 3px 50px 2px #012F40;
-  border-radius: 4.9vh;
+  border-radius: 50%;
 }
 body .sidebar .icones .logoTemp:hover,
 body .sidebar .icones .logo:hover {
@@ -78,7 +78,7 @@ body .sidebar:hover .burger {
   visibility: hidden;
 }
 body .sidebar:hover .menu {
-  margin-top: 50%;
+  margin-top: 10%;
   display: block;
   visibility: visible;
 }
@@ -270,6 +270,9 @@ body .sidebar:hover .contato {
 }
 
 @media (min-width: 961px) {
+  body .sidebar {
+    width: 5vw;
+  }
   body .inicio .intro .nome h1 {
     font-size: 20vh;
   }
@@ -286,6 +289,9 @@ body .sidebar:hover .contato {
   }
 }
 @media (min-width: 600px) {
+  body .sidebar {
+    width: 5vw;
+  }
   body .inicio .intro .nome h1 {
     font-size: 15vh;
   }

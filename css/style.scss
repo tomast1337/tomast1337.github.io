@@ -18,14 +18,14 @@
             position: fixed;
             float: left;
             height: 110vh;
-            width: 5vw;
             background-color: rgb(71, 90, 114);
             .burger {
-                margin: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 35px;
                 display: block;
                 visibility: visible;
                 div {
-                    width: 35px;
                     height: 5px;
                     background-color: black;
                     margin: 6px 0;
@@ -43,7 +43,7 @@
                     margin-bottom: 10px;
                     width: 5vw;
                     box-shadow: 0px 3px 50px 2px #012F40;
-                    border-radius: 4.9vh;
+                    border-radius: 50%;
                     &:hover {
                         transition-duration: 0.5s;
                         margin-left: 1vw;
@@ -74,7 +74,7 @@
                     visibility: hidden;
                 }
                 .menu {
-                    margin-top: 50%;
+                    margin-top: 10%;
                     display: block;
                     visibility: visible;
                     a {
@@ -271,6 +271,9 @@
     
     @media (min-width: 961px) {
         body {
+            .sidebar {
+                width: 5vw;
+            }
             .inicio {
                 .intro {
                     .nome {
@@ -300,6 +303,9 @@
     
     @media (min-width: 600px) {
         body {
+            .sidebar {
+                width: 5vw;
+            }
             .inicio {
                 .intro {
                     .nome {
