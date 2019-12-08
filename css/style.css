@@ -13,6 +13,10 @@ body {
   background-image: url("../img/background.jpg");
   background-size: cover;
 }
+body canvas {
+  z-index: -10 !important;
+  position: fixed !important;
+}
 body .sidebar {
   z-index: 10;
   text-align: center;
@@ -120,7 +124,7 @@ body .sidebar:hover .contato {
 }
 
 .inicio {
-  z-index: 9;
+  z-index: 10;
   height: 300vh;
   width: 100vw;
   overflow: visible;
@@ -133,10 +137,8 @@ body .sidebar:hover .contato {
   float: left;
   text-align: center;
 }
-.inicio .intro .nome {
-  z-index: -1;
-}
 .inicio .intro .nome h1 {
+  z-index: 10;
   margin-top: 25vh;
   margin-bottom: 10vh;
   font-family: "Dosis", sans-serif;
