@@ -6,6 +6,7 @@
     }
     
     body {
+        overflow-x: hidden;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         width: 100vw;
@@ -22,7 +23,7 @@
             position: fixed;
             float: left;
             height: 110vh;
-            background-color: rgb(71, 90, 114);
+            background-color: rgb(255, 255, 255);
             .burger {
                 margin-left: auto;
                 margin-right: auto;
@@ -84,20 +85,20 @@
                     a {
                         transition-duration: 2s;
                         text-decoration: none;
-                        border: 1px solid black;
+                        border: 1px solid rgb(255, 20, 160);
                         padding: 10px 10px 10px 10px;
                         margin: auto;
                         height: fit-content;
                         width: max-content;
                         font-size: 200%;
                         color: white;
-                        background-color: rgba(56, 65, 73, 0.774);
+                        background-color: rgba(255, 71, 95, 0.774);
                         &:hover {
                             transition-duration: 0.5s;
                             font-size: 250%;
                             border-radius: 15px;
-                            box-shadow: 0px 3px 50px 2px whitesmoke;
-                            background-color: rgb(56, 56, 73);
+                            box-shadow: 0px 3px 50px 2px rgb(200, 20, 55);
+                            background-color: rgb(197, 64, 64);
                         }
                     }
                 }
@@ -141,7 +142,13 @@
                     margin-bottom: 10vh;
                     font-family: 'Dosis', sans-serif;
                     font-size: 20vh;
-                    color: whitesmoke;
+                    color: rgb(255, 51, 51);
+                }
+            }
+            .scrollDown {
+                width: 50px;
+                img {
+                    fill: rgb(255, 96, 96);
                 }
             }
         }
@@ -153,8 +160,8 @@
         width: 100vw;
         height: 100vh;
         float: left;
-        background-color: rgb(165, 42, 42);
-        color: rgb(255, 141, 129);
+        background-color: rgba(255, 64, 64, 0.418);
+        color: rgb(255, 194, 187);
         font-size: 2.4vh;
         div {
             margin-left: 24vw;
@@ -193,9 +200,13 @@
                 text-decoration: none;
             }
             transition-duration: 1s;
-            color: black;
+            color: rgb(255,
+            229,
+            229);
             float: left;
-            background-color: white;
+            background-color: rgb(255,
+            63,
+            63);
             margin-left: 4%;
             margin-right: 4%;
             margin-top: 2%;
@@ -216,11 +227,11 @@
     .info {
         z-index: 9;
         font-family: 'Sulphur Point', sans-serif;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.5);
         color: white;
-        margin: 5%;
+        margin: auto;
         width: 90vw;
-        height: 90vh;
+        height: 98vh;
         .texto {
             margin: 10%;
         }
@@ -233,13 +244,13 @@
                 background: white;
                 transition-duration: 1s;
                 margin-bottom: 10px;
-                width: 10vw;
+                width: 100px;
                 box-shadow: 0px 3px 50px 2px #012F40;
                 border-radius: 50%;
                 &:hover {
                     transition-duration: 0.5s;
                     margin-left: 1vw;
-                    width: 12vw;
+                    width: 120px;
                     border-radius: 50%;
                     box-shadow: 0px 3px 50px 2px rgba(245, 245, 245, 0.377);
                 }

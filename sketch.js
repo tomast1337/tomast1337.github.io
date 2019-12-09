@@ -7,7 +7,7 @@ var canvas;
 var board; //Tabulheiro atual
 var linhas; // Numero de linhas do tabulheiro
 var colunas; // Numeros de colunas do tabulheiro
-var resolucao = 50;
+var resolucao = 10;
 
 function boardFactory(Colunas, Linhas) {
     grid = new Array(Colunas)
@@ -45,11 +45,10 @@ function Proximo(Tabulheiro) {
                     }
                 }
             }
-            //vizinhos -= Tabulheiro[x][y];
             if ((Tabulheiro[x][y] == 1) && (vizinhos < 2)) {
                 pBoard[x][y] = 0;
             } else if ((Tabulheiro[x][y] == 1) && (vizinhos > 3)) {
-                pBoard[x][y] = 0;
+                pBoard[x][y] = 1;
             } else if ((Tabulheiro[x][y] == 0) && (vizinhos == 3)) {
                 pBoard[x][y] = 1;
             } else {
@@ -81,7 +80,7 @@ var passos = 0;
 function draw() {
     clear();
     background((165, 50, 50))
-    if (passos <= 15) {
+    if (passos <= 50) {
         board = Proximo(board);
         passos++;
     } else {
@@ -97,7 +96,7 @@ function draw() {
                 r = 255;
                 g = floor(random(150));
                 b = floor(random(150));
-                fill(r, g, b, 50);
+                fill(r, g, b, 150);
                 //fill(255, 141, 129);
                 noStroke();
                 rect(posX, posY, resolucao - 1, resolucao - 1);
