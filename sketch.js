@@ -4,11 +4,10 @@ function windowResized() {
 }
 var canvas;
 
-let board;
-let next;
-let linhas;
-let colunas;
-let resolucao = 50;
+var board; //Tabulheiro atual
+var linhas; // Numero de linhas do tabulheiro
+var colunas; // Numeros de colunas do tabulheiro
+var resolucao = 50;
 
 function boardFactory(Colunas, Linhas) {
     grid = new Array(Colunas)
@@ -18,36 +17,37 @@ function boardFactory(Colunas, Linhas) {
     return grid;
 }
 
-function generate() {
-    for (let x = 1; x < colunas - 1; x++) {
-        for (let y = 1; y < linhas - 1; y++) {
-            let nVizinho = 0;
-            for (let i = -1; i <= 1; i++) {
-                for (let j = -1; j <= 1; j++) {
-                    nVizinho += board[y + i][x + j];
+function Proximo(Tabulheiro) {
+    let pBoard = boardFactory(linhas, colunas);
+    for (let x = 1; x < linhas; x++) {
+        for (y = 1; y < colunas; y++) {
+            let vizinhos = 0;
+            for (let i = -1; i < 1; i++) {
+                for (j = -1; j < 1; j++) {
+                    vizinhos += Tabulheiro[x + i][y + j];
                 }
             }
-            nVizinho -= board[x][y];
-            if ((board[x][y] == 1) && (nVizinho < 2)) {
-                next[x][y] = 0;
-            } else if ((board[x][y] == 1) && (nVizinho > 3)) {
-                next[x][y] = 0;
-            } else if ((board[x][y] == 0) && (nVizinho == 3)) {
-                next[x][y] = 1;
+            vizinhos -= Tabulheiro[x][y];
+            if ((Tabulheiro[x][y] == 1) && (vizinhos < 2)) {
+                pBoard[x][y] = 0;
+            } else if ((Tabulheiro[x][y] == 1) && (vizinhos > 3)) {
+                pBoard[x][y] = 0;
+            } else if ((Tabulheiro[x][y] == 0) && (vizinhos == 3)) {
+                pBoard[x][y] = 1;
             } else {
-                next[x][y] = board[x][y];
+                pBoard[x][y] = Tabulheiro[x][y];
             }
         }
     }
-    let temp = board;
-    board = next;
-    next = temp;
+    return pBoard;
 }
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
     canvas.parent('CanvasHome');
+    canvas.style('z-index', '-1');
+    frameRate(5);
 
     linhas = floor(windowHeight / resolucao);
     colunas = floor(windowWidth / resolucao);
@@ -60,18 +60,22 @@ function setup() {
     }
 }
 
+function mouseClicked(fxn) {
+
+}
+
 function draw() {
+    clear();
     for (let i = 0; i < colunas; i++) {
         for (let j = 0; j < linhas; j++) {
             let posX = i * resolucao;
             let posY = j * resolucao;
             if (board[j][i] == 1) {
-
                 fill(255, 141, 129);
                 noStroke();
                 rect(posX, posY, resolucao - 1, resolucao - 1);
-
             }
         }
     }
+    board = Proximo(board);
 }
