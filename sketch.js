@@ -97,7 +97,7 @@ function draw() {
                 r = 255;
                 g = floor(random(150));
                 b = floor(random(150));
-                fill(r, g, b);
+                fill(r, g, b, 50);
                 //fill(255, 141, 129);
                 noStroke();
                 rect(posX, posY, resolucao - 1, resolucao - 1);
