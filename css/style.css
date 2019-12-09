@@ -144,8 +144,6 @@ body .sidebar:hover .contato {
   font-family: "Dosis", sans-serif;
   font-size: 20vh;
   color: whitesmoke;
-  -webkit-text-stroke-width: 0.05px;
-  -webkit-text-stroke-color: black;
 }
 
 .sobre {
