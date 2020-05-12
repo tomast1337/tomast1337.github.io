@@ -13,6 +13,7 @@ function setup() {
     canvas.position(0, 0);
     canvas.parent('CanvasHome');
     canvas.style('z-index', '-1');
+    canvas.style('position', 'fixed');
     linhas = floor(windowHeight / resolucao);
     colunas = floor(windowWidth / resolucao);
 }
