@@ -1,0 +1,120 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0px 0px 0px 0px;
+  font-size: 100%;
+}
+
+body {
+  height: fit-content;
+  overflow-x: hidden;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100vw;
+  height: fit-content;
+  background-size: cover;
+}
+body .post-image {
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 46px -6px white;
+  box-shadow: 0px 0px 46px -6px white;
+}
+body h1,
+body h2,
+body h3 {
+  text-align: center;
+}
+body a {
+  text-shadow: 0 0 2px white;
+  text-decoration: none;
+  color: #d4d4d4;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+body a:link {
+  color: white;
+}
+body a:visited {
+  color: white;
+}
+body a:hover {
+  text-shadow: 0 0 4px white;
+  color: white;
+}
+body a:active {
+  color: white;
+}
+body .top-nav-bar {
+  z-index: 999;
+  font-size: 34px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #2b2b2b;
+  color: #d4d4d4;
+}
+body .centre-div {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  min-height: 90vh;
+}
+body .centre-div-content {
+  visibility: visible;
+  padding: 5px;
+  flex: 2.5;
+  background-color: rgba(66, 66, 66, 0.938);
+  color: #bdbdbd;
+  font-size: 20px;
+}
+body .blog-nav {
+  padding: 50px;
+  flex: 0.5;
+  background-color: rgba(43, 43, 43, 0.925);
+  color: #d4d4d4;
+  transition-duration: 0.5s;
+  font-size: 14px;
+}
+body .blog-nav .postList {
+  visibility: hidden;
+  font-size: 20px;
+}
+body .blog-nav .hoverTo {
+  visibility: visible;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+body .blog-nav h2 {
+  font-size: 35px;
+}
+body .blog-nav:hover {
+  flex: 2.5;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  font-size: 15px;
+}
+body .blog-nav:hover .postList {
+  visibility: visible;
+}
+body .blog-nav:hover .hoverTo {
+  visibility: hidden;
+}
+body .blog-nav:hover h2 {
+  font-size: 30px;
+}
+body .footer {
+  padding: 5%;
+  height: 100px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
