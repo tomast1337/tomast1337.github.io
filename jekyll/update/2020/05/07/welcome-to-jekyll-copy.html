@@ -11,19 +11,37 @@
     <script src="/assets/JS/jquery.min.js"></script>
     <script src="/assets/JS/popper.min.js"></script>
     <script src="/assets/JS/bootstrap.min.js"></script>
+    <script>
+        var blogMenuVisibility = false;
+
+        function showBlogMenu() {
+            if (blogMenuVisibility) {
+                this.blogMenuVisibility = false;
+                document.getElementById("blog-nav").style.visibility = "hidden";
+                document.getElementById("BlogMenuButton").innerHTML = "Blog";
+                document.getElementById("body").style.overflowY = "visible";
+            } else {
+                this.blogMenuVisibility = true;
+                document.getElementById("blog-nav").style.visibility = "visible";
+                document.getElementById("BlogMenuButton").innerHTML = "Voltar";
+                document.getElementById("body").style.overflowY = "hidden";
+            }
+            document.getElementById("body").style.overflowX = "hidden";
+        }
+    </script>
     <title>Nicolas Blog profile</title>
 </head>
 
-<body>
+<body id="body">
     <div id="CanvasHome">
     </div>
     <div class="top-nav-bar">
         <a href="/index.html">Nicolas</a>
         <a href="/projetos/destaqueProjetos.html">Projetos</a>
-        <a href="../">Blog</a>
+        <a onClick="showBlogMenu()" id="BlogMenuButton">Blog</a>
     </div>
     <div class="centre-div">
-        <div class="centre-div-content w-60">
+        <div class="centre-div-content" id="content">
             <h1>Welcome to Jekyll!</h1>
             <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
@@ -45,41 +63,38 @@
 
 
         </div>
-        <div class="blog-nav w-40">
+        <div class="blog-nav" id="blog-nav">
             <h2>Blog Posts</h2>
-            <div class="hoverTo">Passa o mouse
-                </br>
-                ou
-                </br>
-                clique para ver</div>
             </br>
-            
-            <li class="postList">
+            <div class="postList">
                 
-                <span class="post-meta">May 11, 2020</span>
-                <h3>
-                    <a class="post-link" href="/minecraft/2020/05/11/Fiz-um-mod-para-minecraft.html">
+                <li>
+                    
+                    <span class="post-meta">May 11, 2020</span>
+                    <h3>
+                        <a href="/minecraft/2020/05/11/Fiz-um-mod-para-minecraft.html">
                                 Fiz Um mod para Minecraft
-                            </a>
-                </h3>
+                        </a>
+                    </h3>
+                    
+                </li>
                 
-            </li>
-            
-            <li class="postList">
-                
-                <span class="post-meta">May 7, 2020</span>
-                <h3>
-                    <a class="post-link" href="/jekyll/update/2020/05/07/welcome-to-jekyll-copy.html">
+                <li>
+                    
+                    <span class="post-meta">May 7, 2020</span>
+                    <h3>
+                        <a href="/jekyll/update/2020/05/07/welcome-to-jekyll-copy.html">
                                 Welcome to Jekyll!
-                            </a>
-                </h3>
+                        </a>
+                    </h3>
+                    
+                </li>
                 
-            </li>
-            
+            </div>
         </div>
     </div>
     <div class="footer">
-        Nicolas Vycas Nery</br>
+        <a class="post-link" href="/index.html">Nicolas Vycas Nery</a></br>
         <a class="post-link" href="https://www.linkedin.com/in/nicolas-vycas-nery/">linkedin</a></br>
         <a class="post-link" href="https://twitter.com/NicolasVycas">twitter</a></br>
     </div>
