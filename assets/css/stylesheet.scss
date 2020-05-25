@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Space+Mono&display=swap');
 html {
     scroll-behavior: smooth;
     margin: 0px 0px 0px 0px;
@@ -22,6 +23,7 @@ body {
     h2,
     h3 {
         text-align: center;
+        font-family: 'IBM Plex Sans', sans-serif;
     }
     overflow-x: hidden;
     margin: 0px 0px 0px 0px;
@@ -35,6 +37,7 @@ body {
         color: rgb(212, 212, 212);
         transition-duration: .5s;
         transition-timing-function: ease-in-out;
+        font-family: 'Space Mono', monospace;
     }
     a:link {
         color: rgb(255, 255, 255);
@@ -71,6 +74,8 @@ body {
         min-height: 90vh;
     }
     .centre-div-content {
+        padding-left: 10vw;
+        padding-right: 10vw;
         visibility: visible;
         padding: 5px;
         width: 100vw;
@@ -79,6 +84,10 @@ body {
         background-color: rgba(66, 66, 66, 0.938);
         color: invert(rgb(66, 66, 66));
         font-size: 20px;
+    }
+    .centre-div-text {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     .blog-nav {
         transition-duration: 0.5s;
@@ -89,7 +98,7 @@ body {
         padding: 50px;
         width: 100vw;
         min-height: 100vh;
-        background-color: rgba(177, 177, 177, 0.26);
+        background-color: rgba(177, 177, 177, 0.63);
         color: rgb(255, 255, 255);
         transition-duration: .5s;
         font-size: 14px;
